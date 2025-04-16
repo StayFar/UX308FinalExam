@@ -1,4 +1,4 @@
-import {Question1, Question2, Question3, Question4, Question5, Question6} from './components.jsx';
+import {Question1, Question2, Question3, Question4, Question5, Question6, Question7} from './components.jsx';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Question4 />
         <Question5 />
         <Question6 />
+        <Question7 />
     </>
   )
 }

@@ -84,4 +84,16 @@ function pay_raise(status, years, salary) {
     const new_salary = salary + (salary * raiseRate);
     return new_salary;
 }
-export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise}
+
+function is_leap(year) {
+    if (year % 4 !== 0) {
+        return false;
+    } else if (year % 100 !== 0) {
+        return true;
+    } else if (year % 400 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap}

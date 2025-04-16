@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week, pay_raise} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap} from './functions.js';
 
 function Question1(){
     return <section>
@@ -36,7 +36,6 @@ function Question4(){
     return <section>
 4. Returns the product of the two largest values of
     val1, val2, and val3.
-    Use: product = largest_product(val1, val2, val3)
 <h2>results</h2>
 <p>largest_product(3, 5, 2) == "{largest_product(15)}" </p>
 <p>largest_product(-1, 7, 4) == "{largest_product(28)}" </p>
@@ -49,7 +48,6 @@ function Question5(){
 5. Returns the name of a day of the week given an integer day number.
     Day 1 is "Sunday", day 7 is "Saturday".
     Returns "Error" if the number is not valid.
-    Use: day = day_of_the_week(day_num)
 <h2>results</h2>
 <p>day_of_the_week(1) == "{day_of_the_week(Sunday)}" </p>
 <p>day_of_the_week(5) == "{day_of_the_week(Thursday)}" </p>
@@ -68,7 +66,6 @@ function Question6(){
         3% for part time greater than 10 years service
         1% for part time less than 4 years service
         2% for all others
-    Use: new_salary = pay_raise(status, years, salary)
 <h2>results</h2>
 <p>pay_raise('F', 12, 60000) == "{pay_raise(63000)}" </p>
 <p>pay_raise('P', 11, 30000) == "{pay_raise(30900)}" </p>
@@ -76,4 +73,21 @@ function Question6(){
     </section>
 
 }
-export {Question1, Question2, Question3, Question4, Question5, Question6}
+
+function Question7(){
+    return <section>
+7. Determines if a year is a leap year. Every year that is
+    exactly divisible by four is a leap year, except for years
+    that are exactly divisible by 100, but these centurial years
+    are leap years if they are exactly divisible by 400. For
+    example, the years 1700, 1800, and 1900 are not leap years,
+    but the years 1600 and 2000 are.
+<h2>results</h2>
+<p>is_leap(2000) == "{is_leap(true)}" </p>
+<p>is_leap(1900) == "{is_leap(false)}" </p>
+<p>is_leap(2024) == "{is_leap(true)}" </p>
+<p>is_leap(2026) == "{is_leap(false)}" </p>
+    </section>
+    
+}
+export {Question1, Question2, Question3, Question4, Question5, Question6, Question7}
