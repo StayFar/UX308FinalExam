@@ -48,4 +48,40 @@ function largest_product(val1, val2, val3) {
     return values[0] * values[1];
 }
 
-export {hello, fahrenheitToCelsius, colour_mix, largest_product}
+function day_of_the_week(day_num) {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+    if (day_num >= 1 && day_num <= 7) {
+        return days[day_num - 1];
+    } else {
+        return "Error";
+    }
+}
+
+function pay_raise(status, years, salary) {
+    let raiseRate = 0;
+
+    if (status === 'F') {
+        if (years >= 10) {
+            raiseRate = 0.05;
+        } else if (years < 4) {
+            raiseRate = 0.015;
+        } else {
+            raiseRate = 0.02;
+        }
+    } else if (status === 'P') {
+        if (years > 10) {
+            raiseRate = 0.03;
+        } else if (years < 4) {
+            raiseRate = 0.01;
+        } else {
+            raiseRate = 0.02;
+        }
+    } else {
+        return "Error: Invalid status";
+    }
+
+    const new_salary = salary + (salary * raiseRate);
+    return new_salary;
+}
+export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise}
