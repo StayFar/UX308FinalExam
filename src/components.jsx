@@ -20,4 +20,15 @@ function Question2(){
     </section>
 }
 
-export {Question1, Question2}
+function Question3(){
+    return <section>
+3.Determines the secondary rgb_colour from mixing two primary
+    RGB (Red, Green, Blue) colours. The order of the colours
+    is *not* significant.
+<h2>results</h2>
+<p>colour_mix("red", "blue") == "{colour_mix(fuchsia)}"</p>
+<p>colour_mix("green", "blue") == "{colour_mix(aqua)}"</p>
+<p>colour_mix("red", "yellow") == "{colour_mix(Error)}"</p>
+    </section>
+}
+export {Question1, Question2, Question3}
