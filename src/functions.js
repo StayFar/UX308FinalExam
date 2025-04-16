@@ -37,4 +37,15 @@ function colour_mix(rgb_colour1, rgb_colour2) {
     return combinations[`${rgb_colour1}+${rgb_colour2}`] || "Error";
 }
 
-export {hello, fahrenheitToCelsius, colour_mix}
+function largest_product(val1, val2, val3) {
+    // Put the values into an array
+    const values = [val1, val2, val3];
+
+    // Sort the array in descending order
+    values.sort((a, b) => b - a);
+
+    // Multiply the two largest values
+    return values[0] * values[1];
+}
+
+export {hello, fahrenheitToCelsius, colour_mix, largest_product}

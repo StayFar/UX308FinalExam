@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix, largest_product} from './functions.js';
 
 function Question1(){
     return <section>
@@ -22,7 +22,7 @@ function Question2(){
 
 function Question3(){
     return <section>
-3.Determines the secondary rgb_colour from mixing two primary
+3. Determines the secondary rgb_colour from mixing two primary
     RGB (Red, Green, Blue) colours. The order of the colours
     is *not* significant.
 <h2>results</h2>
@@ -31,4 +31,17 @@ function Question3(){
 <p>colour_mix("red", "yellow") == "{colour_mix(Error)}"</p>
     </section>
 }
-export {Question1, Question2, Question3}
+
+function Question4(){
+    return <section>
+4. Returns the product of the two largest values of
+    val1, val2, and val3.
+    Use: product = largest_product(val1, val2, val3)
+<h2>results</h2>
+<p>largest_product(3, 5, 2) == "{largest_product(15)}" </p>
+<p>largest_product(-1, 7, 4) == "{largest_product(28)}" </p>
+<p>largest_product(-3, -5, -2) == "{largest_product(6)}" </p>
+    </section>
+}
+
+export {Question1, Question2, Question3, Question4}
