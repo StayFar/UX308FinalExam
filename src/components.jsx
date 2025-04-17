@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap} from './functions.js';
+import {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap} from './functions.js';
 
 function Question1(){
     return <section>
