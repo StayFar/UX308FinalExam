@@ -83,11 +83,11 @@ function Question7(){
     example, the years 1700, 1800, and 1900 are not leap years,
     but the years 1600 and 2000 are.
 <h2>results</h2>
-<p>is_leap(2000) == "{is_leap(2000)}" </p>
-<p>is_leap(1900) == "{is_leap(1900)}" </p>
-<p>is_leap(2024) == "{is_leap(2024)}" </p>
-<p>is_leap(2026) == "{is_leap(2026)}" </p>
-    </section>
-    
+<p>is_leap(2000) == {is_leap(2000).toString()}</p>
+<p>is_leap(1900) == {is_leap(1900).toString()}</p>
+<p>is_leap(2024) == {is_leap(2024).toString()}</p>
+<p>is_leap(2026) == {is_leap(2026).toString()}</p>
+        </section>
 }
+
 export {Question1, Question2, Question3, Question4, Question5, Question6, Question7}

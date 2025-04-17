@@ -96,4 +96,5 @@ function is_leap(year) {
         return false;
     }
 }
+
 export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap}
