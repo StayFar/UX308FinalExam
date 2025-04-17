@@ -26,9 +26,9 @@ function Question3(){
     RGB (Red, Green, Blue) colours. The order of the colours
     is *not* significant.
 <h2>results</h2>
-<p>colour_mix("red", "blue") == "{colour_mix(fuchsia)}"</p>
-<p>colour_mix("green", "blue") == "{colour_mix(aqua)}"</p>
-<p>colour_mix("red", "yellow") == "{colour_mix(Error)}"</p>
+<p>colour_mix("red", "blue") == "{colour_mix("red", "blue")}"</p>
+<p>colour_mix("green", "blue") == "{colour_mix("green", "blue")}"</p>
+<p>colour_mix("red", "yellow") == "{colour_mix("red", "yellow")}"</p>
     </section>
 }
 
@@ -37,9 +37,9 @@ function Question4(){
 4. Returns the product of the two largest values of
     val1, val2, and val3.
 <h2>results</h2>
-<p>largest_product(3, 5, 2) == "{largest_product(15)}" </p>
-<p>largest_product(-1, 7, 4) == "{largest_product(28)}" </p>
-<p>largest_product(-3, -5, -2) == "{largest_product(6)}" </p>
+<p>largest_product(3, 5, 2) == "{largest_product(3, 5, 2)}" </p>
+<p>largest_product(-1, 7, 4) == "{largest_product(-1, 7, 4)}" </p>
+<p>largest_product(-3, -5, -2) == "{largest_product(-3, -5, -2)}" </p>
     </section>
 }
 
@@ -49,9 +49,9 @@ function Question5(){
     Day 1 is "Sunday", day 7 is "Saturday".
     Returns "Error" if the number is not valid.
 <h2>results</h2>
-<p>day_of_the_week(1) == "{day_of_the_week(Sunday)}" </p>
-<p>day_of_the_week(5) == "{day_of_the_week(Thursday)}" </p>
-<p>day_of_the_week(12) == "{day_of_the_week(Error)}" </p>
+<p>day_of_the_week(1) == "{day_of_the_week(1)}" </p>
+<p>day_of_the_week(5) == "{day_of_the_week(5)}" </p>
+<p>day_of_the_week(12) == "{day_of_the_week(12)}" </p>
     </section>
 }
 
@@ -67,9 +67,9 @@ function Question6(){
         1% for part time less than 4 years service
         2% for all others
 <h2>results</h2>
-<p>pay_raise('F', 12, 60000) == "{pay_raise(63000)}" </p>
-<p>pay_raise('P', 11, 30000) == "{pay_raise(30900)}" </p>
-<p>pay_raise('F', 2, 40000) == "{pay_raise(40600)}" </p>
+<p>pay_raise('F', 12, 60000) == "{pay_raise('F', 12, 60000)}" </p>
+<p>pay_raise('P', 11, 30000) == "{pay_raise('P', 11, 30000)}" </p>
+<p>pay_raise('F', 2, 40000) == "{pay_raise('F', 2, 40000)}" </p>
     </section>
 
 }
@@ -83,10 +83,10 @@ function Question7(){
     example, the years 1700, 1800, and 1900 are not leap years,
     but the years 1600 and 2000 are.
 <h2>results</h2>
-<p>is_leap(2000) == "{is_leap(true)}" </p>
-<p>is_leap(1900) == "{is_leap(false)}" </p>
-<p>is_leap(2024) == "{is_leap(true)}" </p>
-<p>is_leap(2026) == "{is_leap(false)}" </p>
+<p>is_leap(2000) == "{is_leap(2000)}" </p>
+<p>is_leap(1900) == "{is_leap(1900)}" </p>
+<p>is_leap(2024) == "{is_leap(2024)}" </p>
+<p>is_leap(2026) == "{is_leap(2026)}" </p>
     </section>
     
 }
